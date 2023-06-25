@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+      eager: true
+feign:
+  sentinel:
+    enabled: true
